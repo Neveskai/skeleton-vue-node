@@ -1,0 +1,186 @@
+* {box-sizing: border-box;}
+
+body {
+	border: 0;
+	padding: 0;
+	margin: 0;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+.h-center {
+	position: absolute;
+	transform: translate(-50%,0);
+	-ms-transform: translate(-50%,0); /* IE 9 */
+	-webkit-transform: translate(-50%,0); /* Safari and Chrome */
+	-o-transform: translate(-50%,0);
+	left: 50%;
+}
+.v-center {
+	position: absolute;
+	transform: translate(0,-50%);
+	-ms-transform: translate(0,-50%); /* IE 9 */
+	-webkit-transform: translate(0,-50%); /* Safari and Chrome */
+	-o-transform: translate(0,-50%);
+	top: 50%;
+}
+.vh-center {
+	position: absolute;
+	transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%); /* IE 9 */
+	-webkit-transform: translate(-50%,-50%); /* Safari and Chrome */
+	-o-transform: translate(-50%,-50%);
+	left: 50%;
+	top: 50%;
+}
+.b-scroll {
+	max-height: 458px;
+	overflow-y: auto;
+}
+
+.invisible2 {display: none;}
+.visible2 	{display: inherit;}
+
+.hide2 		{display: none !important;}
+.chartsBox	{display: inline-flex; padding: 1px !important; height: 47vh;}
+
+.table thead tr th {padding: 7px;}
+.table tbody tr td {padding: 7px;}
+
+@media only screen and (min-device-width: 900px) {
+	#container {
+		height: 100%; 
+		width: 100%; 
+	}
+	.container {
+		width: 100%; 
+		height: 100%;
+	}
+	.bg-red{
+		background-color: #dfdede;
+	}
+	#principal {
+		height: 100vh;
+		max-height: 100vh; 
+		width: 100%;
+	}
+	.img-btn {
+		height: 39vh;
+		width: 25%;
+		display: inline-block;
+		float: left;
+	}
+	.img-btn:hover {
+		cursor: pointer;
+	}
+	.img-btn img {
+		position: relative; 
+		top: 50%; 
+		left: 50%; 
+		transform: translate(-50%,-50%);
+		-ms-transform: translate(-50%,-50%); /* IE 9 */
+		-webkit-transform: translate(-50%,-50%); /* Safari and Chrome */
+		-o-transform: translate(-50%,-50%);
+		border-radius: 3px;
+		max-width: 100%;
+	}
+	.img-icon {
+		height: 39vh;
+		padding: 1px;
+	}
+	#right-bar {
+		width: 45px;
+		position: fixed;
+		right: 0;
+		height: 100%;
+	}
+	#top-menu {
+		width: 100%;
+		position: fixed;
+		top: 0;
+		height: 45px;
+		box-shadow: 0px 0px 6px 0px #444;
+	}
+	.body-with-rightBar		{margin-right: 46px;}
+	.body-with-topMenu		{margin-top: 46px;}
+	.body-with-bottomMenu	{padding-bottom: 42px; padding-top: 1px; margin-right: 0px;}
+	.mobile2 {
+		display: none !important;
+	}
+}
+
+@media only screen and (max-device-width: 900px){
+	* {
+		font-size: 96%;
+	}
+	.bg-red{
+		background-color: #fff;
+	}
+	#container {
+		min-height: 100%; 
+		min-width: 100%; 
+		z-index: 2 !important;
+		padding: 0px !important;
+		margin: 0px !important;
+	}
+	#principal {
+		position: fixed;
+		max-width: 100%; 
+		max-height: 100%;
+		padding: 0px !important;
+		margin: 0px !important;
+	}
+	#nome 		{top: 90px !important; font-weight: 400 !important;}
+	#navegacao	{display: none !important;}
+	.desktop3 	{display: none;}
+	.desktop2 	{display: none !important;}
+	#right-bar 	{display: none;}
+	#top-menu 	{display: none;}
+}
+
+@media only screen and (max-device-width: 900px) and (orientation: landscape) {
+	.img-btn {
+		height: 400px;
+		width: 100%;
+		display: inline-block;
+		float: left;
+	}
+	.img-btn img {
+		position: relative; 
+		top: 50%; 
+		left: 50%; 
+		transform: translate(-50%,-50%);
+		-ms-transform: translate(-50%,-50%); /* IE 9 */
+		-webkit-transform: translate(-50%,-50%); /* Safari and Chrome */
+		-o-transform: translate(-50%,-50%);
+		border-radius: 3px;
+		max-width: 100%;
+	}
+}
+
+@media only screen and (max-device-width: 900px) and (orientation: portrait) {
+	.img-btn {
+		height: 250px;
+		width: 50%;
+		display: inline-block;
+		float: left;
+	}
+	.img-btn img {
+		position: relative; 
+		top: 50%; 
+		left: 50%; 
+		transform: translate(-50%,-50%);
+		-ms-transform: translate(-50%,-50%); /* IE 9 */
+		-webkit-transform: translate(-50%,-50%); /* Safari and Chrome */
+		-o-transform: translate(-50%,-50%);
+		border-radius: 3px;
+		max-width: 100%;
+	}
+}
